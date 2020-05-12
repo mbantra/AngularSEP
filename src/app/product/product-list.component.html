@@ -1,0 +1,16 @@
+<!-- <p>
+  product-list works!
+</p> -->
+
+<input appColorChanger #txtBox type="text" />
+
+<div>
+  <app-product *ngFor='let product of productList' 
+  [product]='product' (clicked)='logPickedProduct($event)'></app-product>
+</div>
+<!-- 
+<app-product #p1 [product] = 'this.productList[2]'></app-product> -->
+
+
+<!-- 
+{{ p1.product | json }} -->

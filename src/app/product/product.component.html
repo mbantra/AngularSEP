@@ -1,0 +1,56 @@
+<!-- <p>
+  product works!
+</p> -->
+
+<!-- Person Class
+firstName
+lastName
+personid
+
+
+have one textbox for first name input
+have one textbox for last name input
+have one "Add" button which will add the values of two textboxes and create new instance of person
+and add that new instance into "personList" array. after adding into array, clear the fields of textboxes
+-->
+
+
+<div (click)='pickProduct()'> 
+  Product Id: {{ product.id }}
+  Product Name: {{ product.name }}
+</div>
+
+
+  <!-- string interpolation -->
+  <!-- product id: {{ id }} -->
+
+
+
+  <!-- property binding: [] -->
+   <!-- event binding: ()   (input)="changeName($event.target.value)" -->  
+  <!-- <input #nameCtrl type="text" [value]="name">
+  {{ name }}
+
+  <input type="button" value='submit' (click)='logName(nameCtrl.value)' /> -->
+
+
+<!-- structural directives: ngif, ngfor, ngswitch -->
+<!-- 
+<div *ngIf='isCartShown'>
+  Shopping Cart:
+  <div class="">...</div>
+  <div class="">...</div>
+</div> -->
+
+<!-- <ul>
+  <li *ngFor='let item of productList;'>
+    {{ 'Id:' + (item.id | booster: 1000)  + ' Name: ' + (item.name | uppercase | titlecase | lowercase) }}
+  </li>
+</ul> -->
+
+<!-- <div>
+  today's date: {{ todaysDate | date: 'longDate' }}
+</div> -->
+
+<!-- <div [ngClass]='...'></div>
+<div [ngStyle]= '..'></div> -->
