@@ -15,6 +15,7 @@ export class ProductComponent implements OnInit {
   
   @Input() product: Product;
   @Output() clicked = new EventEmitter<Product>();
+  @Output() addProductEmitter = new EventEmitter<Product>();
   constructor() { }
 
   ngOnInit() {
@@ -22,6 +23,10 @@ export class ProductComponent implements OnInit {
     // this.isCartShown = true;
   }
 
+  // add(id, name, desc) {
+  //   let p = new Product(id, name, description);
+  //   this.addProductEmitter.emit(p);
+  // }
   pickProduct() {
     this.clicked.emit(this.product);
   }

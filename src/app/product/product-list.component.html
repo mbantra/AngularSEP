@@ -8,6 +8,10 @@
   <app-product *ngFor='let product of productList' 
   [product]='product' (clicked)='logPickedProduct($event)'></app-product>
 </div>
+
+<!-- {{ timer$ | async }} -->
+
+{{ counter }}
 <!-- 
 <app-product #p1 [product] = 'this.productList[2]'></app-product> -->
 
