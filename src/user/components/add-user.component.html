@@ -1,0 +1,26 @@
+<p>
+  add-user works!
+</p>
+
+<form [formGroup]="userForm" (ngSubmit)="saveUser()">
+  <div>
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" formControlName="firstName" required>
+  </div>
+  <div>
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" formControlName="lastName">
+  </div>
+  <div>
+    <label for="phone">Phone</label>
+    <input type="text" id="phone" formControlName="phone" >
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <input type="text" id="email" formControlName="email" >
+  </div>
+  
+  {{ userForm.status }}
+
+  <button type="submit">Submit</button>
+</form>

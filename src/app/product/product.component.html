@@ -13,12 +13,17 @@ have one textbox for last name input
 have one "Add" button which will add the values of two textboxes and create new instance of person
 and add that new instance into "personList" array. after adding into array, clear the fields of textboxes
 -->
+product component works!
+
+<a routerLink='list'>Go to List</a>
 
 
-<div (click)='pickProduct()'> 
+<router-outlet></router-outlet>
+
+<!-- <div (click)='pickProduct()'> 
   Product Id: {{ product.id }}
   Product Name: {{ product.name }}
-</div>
+</div> -->
 <!-- #id, #name #description -->
 <!-- <input type="submit" (click)="add(id, name, description)"> -->
   <!-- string interpolation -->
